@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(354, 64%, 50%);
+}
+
+.offcanvas-header {
+    background-color: hsl(354, 64%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+.navbar-brand {
+    color: hsl(0, 0%, 100%);
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../resources/images/toggler_icon_v1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.offcanvas .nav-link, .offcanvas .nav-link.active {
+    color: hsl(354, 64%, 50%);
+}
+
+.navbar-collapse .nav-link, .navbar-collapse .nav-link.active{
+    color: hsl(0, 0%, 100%);
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
