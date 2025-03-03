@@ -1,216 +1,359 @@
-*{
+/* Reset and Base Styles */
+* {
     padding: 0;
     margin: 0;
-    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     box-sizing: border-box;
 }
 
-header{
+body {
+    background-color: black;
+    color: #f5e6ca;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
     background-color: rgb(209, 47, 62);
     color: #f5e6ca;
     padding: 15px;
-    padding-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
 }
 
 .logo img {
-    max-width: 150px;
-    transition: 0.5s;
+    height: 70px;
+    transition: transform 0.5s ease;
 }
 
-.logo img:hover{
-    transform: scale(110%);
-    transition: 0.5s;
+.logo img:hover {
+    transform: scale(1.1);
 }
 
-body{
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f5e6ca;
+header h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    margin-top: 10px;
 }
 
 nav ul {
     display: flex;
+    justify-content: space-around;
     list-style: none;
-    justify-content: center;
-    margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 5px 10px;
 }
 
 nav ul li a {
     color: #f5e6ca;
     text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Container and Hero Section */
 .container {
     position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: white;
     text-align: center;
 }
 
-.container img{
-    position: relative;
-    filter: brightness(50%);
-  
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 60vh;
+    object-fit: cover;
 }
 
-.container:hover{
-    filter: brightness(25%);
-    transition: filter 0.5s ease-in-out;
-}
-
+/* Text Overlays */
 .hometext {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
     font-weight: bold;
-    color: #f5e6ca;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hometext span {
     display: inline-block;
-    transition: transform 0.3s ease;
+    margin: 0 2px;
+    animation: bounce 1s ease infinite;
+    animation-delay: calc(0.1s * var(--order));
 }
 
-.hometext span:hover {
-    transform: translateY(-10px);
-    color: #d12f3e;
-}
+.hometext span:nth-child(1) { --order: 1; }
+.hometext span:nth-child(2) { --order: 2; }
+.hometext span:nth-child(3) { --order: 3; }
+.hometext span:nth-child(4) { --order: 4; }
+.hometext span:nth-child(5) { --order: 5; }
+.hometext span:nth-child(6) { --order: 6; }
+.hometext span:nth-child(7) { --order: 7; }
+.hometext span:nth-child(8) { --order: 8; }
+.hometext span:nth-child(9) { --order: 9; }
+.hometext span:nth-child(10) { --order: 10; }
+.hometext span:nth-child(11) { --order: 11; }
+.hometext span:nth-child(12) { --order: 12; }
+.hometext span:nth-child(13) { --order: 13; }
 
 .hometextunder {
     position: absolute;
-    top: 65%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2em;
-    color: #f5e6ca;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .hometextbutton {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-}
-
-.hometextbutton:nth-of-type(1) {
-    top: 75%;
-}
-
-.hometextbutton:nth-of-type(2) {
-    top: 82%;
-}
-
-.hometextbutton:nth-of-type(3) {
-    top: 89%;
+    position: relative;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
 }
 
 .hometextbutton button {
-    background-color: #d12f3e;
+    background-color: rgb(209, 47, 62);
+    color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 20px;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .hometextbutton button:hover {
-    background-color: #f5e6ca;
+    transform: scale(1.05);
+    background-color: rgb(223, 77, 91);
 }
 
 .hometextbutton a {
-    color: #f5e6ca;
+    color: white;
     text-decoration: none;
-}
-
-.hometextbutton button:hover a {
-    color: #d12f3e;
 }
 
 .arrow {
     margin-left: 5px;
+    font-weight: bold;
 }
 
+/* Section Styles */
 section {
-    padding: 30px;
+    padding: 30px 5%;
     margin: 20px 0;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+section h2, section h3 {
+    color: rgb(209, 47, 62);
+    margin-bottom: 15px;
 }
 
 section p {
+    margin-bottom: 15px;
     line-height: 1.6;
-    margin-bottom: 15px;
 }
 
-.section1 table {
+/* Portfolio Items */
+.portfolio-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.portfolio-item img {
     width: 100%;
-    border-spacing: 20px;
-}
-
-.section1 td {
-    padding: 15px;
-    vertical-align: top;
-}
-
-.section1 img {
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.contact {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.contact h3 {
-    margin: 20px 0;
-    color: #d12f3e;
-}
-
-.contact-info {
-    margin: 20px 0;
-}
-
-.contact-form .form-group {
+    max-width: 600px;
+    height: auto;
     margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.contact-form label {
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.form-group input, .form-group textarea {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #444;
     border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
 }
 
 .contact-form button {
-    background-color: #d12f3e;
-    color: #f5e6ca;
+    background-color: rgb(209, 47, 62);
+    color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-footer{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.contact-form button:hover {
+    background-color: rgb(223, 77, 91);
+}
+
+/* About Section Styles */
+.about-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Testimonials */
+.testimonials p {
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid rgb(209, 47, 62);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Footer */
+footer {
     background-color: #d12f3e;
+    color: #f5e6ca;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+    
+    nav {
+        width: auto;
+        margin-top: 0;
+    }
+    
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header h2 {
+        padding-top: 0;
+    }
+    
+    .hometext {
+        font-size: 3rem;
+    }
+    
+    .hometextunder {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hometext {
+        font-size: 1.5rem;
+        top: 25%;
+    }
+    
+    .hometextunder {
+        font-size: 1rem;
+        top: 40%;
+    }
+    
+    .portfolio-item img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 1.4rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+    
+    .hometext {
+        font-size: 1.2rem;
+    }
+    
+    .hometextunder {
+        font-size: 0.9rem;
+    }
+    
+    .hometextbutton button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }
