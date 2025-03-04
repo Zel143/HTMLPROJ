@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="resources/images/logos/logo_darkbg.png">
+
+    <!-- Reset -->
+    <link href="styles/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link href="styles/unified.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
+
+    <title>Codejos</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-md fixed-top">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="resources/images/logos/logo_transparentbg.png" alt="Conejos Coding Corporation Logo">
+            </a>
+            <a class="navbar-brand" href="">Codejos</a>
+
+            <!-- Toggler button for offcanvas (only visible on small screens) -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Navbar (Only for small screens) -->
+            <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Codejos</h5>
+                    <button type="button" class="btn-close" data-bs-theme="light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <hr class="divider"/>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="conejos_ex4.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about_us.html#team">Our Team</a></li>
+                                <li><a class="dropdown-item" href="about_us.html#company">The Company</a></li>
+                                <li><a class="dropdown-item" href="about_us.html#mission_vision">Mission and Vision</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html#offer">What We Offer</a></li>
+                                <li><a class="dropdown-item" href="services.html#cases">Use Cases</a></li>
+                                <li><a class="dropdown-item" href="services.html#pricing">Pricing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Portfolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="portfolio.html#gallery">Gallery</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html#works">Our Works</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html#testimonials">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Regular Navbar (Visible on medium screens and larger) -->
+            <div class="collapse navbar-collapse d-none d-md-flex">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="conejos_ex4.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about_us.html#team">Our Team</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#company">The Company</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#mission_vision">Mission and Vision</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#offer">What We Offer</a></li>
+                            <li><a class="dropdown-item" href="services.html#cases">Use Cases</a></li>
+                            <li><a class="dropdown-item" href="services.html#pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html#gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html#works">Our Works</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html#testimonials">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Full screen on larger devices) -->
+    <section class="hero">
+        <div class="hero-bg">
+            <h1 class="hero-header">Codejos</h1>
+            <p class="hero-text">
+                We're more efficient than your IT team.
+            </p>
+        </div>
+        <div class="scroll-prompt">
+            <div class="scroll-text">SCROLL</div>
+            <span class="scroll-arrow">↓</span>
+        </div>
+    </section>
+
+    <!-- Main Content Section with a backdrop -->
+    <section class="content-backdrop">
+        <div class="background"></div>
+        <main class="content backdrop">
+
+            <!-- 1st content -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Close the gap between development and operations</h2>
+                    <p>Around the world, development teams often follow inefficient processes that result in:</p>
+                    <ul>
+                        <li>Sequential workflows that require tedious rework</li>
+                        <li>Late issue detection, leading to higher costs</li>
+                        <li>Complex setups that demand continuous maintenance</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/flawed_development.png" alt="A flawed development plan is shown">
+            </section>
+
+            <!-- 2nd content -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>The “over the wall” mentality</h2>
+                    <p>A "throw it over the wall" mentality results from the conventional division between development and operation.</p>
+                    <p>Without knowing how to distribute and maintain their code, developers give it to operations.</p>
+                </div>
+                <img src="resources/images/content/over-the-wall.png" alt="An over the wall mentality diagram is shown">
+            </section>
+
+            <!-- 3rd content -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Our Expertise</h2>
+                    <p>We specialize in a variety of technologies and methodologies to ensure your projects are delivered efficiently and effectively.</p>
+                    <ul>
+                        <li>Agile Development</li>
+                        <li>DevOps Practices</li>
+                        <li>Cloud Computing</li>
+                        <li>Cybersecurity</li>
+                        <li>Data Analytics</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/expertise.png" alt="Our expertise in various technologies">
+            </section>
+
+            <!-- 4th content -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>Our Approach</h2>
+                    <p>Our approach is centered around understanding your unique needs and delivering tailored solutions.</p>
+                    <ul>
+                        <li>Client-centric focus</li>
+                        <li>Agile methodologies</li>
+                        <li>Continuous improvement</li>
+                        <li>Proactive communication</li>
+                        <li>Results-driven</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/approach.png" alt="Our approach to client projects">
+            </section>
+
+            <!-- 5th content -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Our Technology Stack</h2>
+                    <p>We utilize a robust technology stack to build scalable and secure solutions.</p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/tech_stack.png" alt="Our technology stack">
+            </section>
+
+            <!-- 6th content -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>Our Development Process</h2>
+                    <p>Our development process ensures that we deliver high-quality solutions on time and within budget.</p>
+                    <ul>
+                        <li>Requirement Gathering</li>
+                        <li>Design and Architecture</li>
+                        <li>Development</li>
+                        <li>Testing</li>
+                        <li>Deployment</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/development_process.png" alt="Our development process">
+            </section>
+
+            <!-- 7th content -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Our Quality Assurance</h2>
+                    <p>We follow rigorous quality assurance processes to ensure our solutions meet the highest standards.</p>
+                    <ul>
+                        <li>Code Reviews</li>
+                        <li>Automated Testing</li>
+                        <li>Manual Testing</li>
+                        <li>Performance Testing</li>
+                        <li>Security Testing</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/quality_assurance.png" alt="Our quality assurance processes">
+            </section>
+
+            <!-- 8th content -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>Our Support Services</h2>
+                    <p>We offer comprehensive support services to ensure your solutions run smoothly.</p>
+                    <ul>
+                        <li>24/7 Technical Support</li>
+                        <li>Maintenance Services</li>
+                        <li>Upgrade Services</li>
+                        <li>Training and Documentation</li>
+                        <li>Consulting Services</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/support_services.png" alt="Our support services">
+            </section>
+
+            <!-- 9th content -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Our Industry Expertise</h2>
+                    <p>We have extensive experience in various industries, enabling us to deliver industry-specific solutions.</p>
+                    <ul>
+                        <li>Healthcare</li>
+                        <li>Finance</li>
+                        <li>Retail</li>
+                        <li>Manufacturing</li>
+                        <li>Education</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/industry_expertise.png" alt="Our industry expertise">
+            </section>
+
+            <!-- 10th content -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>Our Certifications</h2>
+                    <p>We hold various certifications that demonstrate our commitment to excellence and industry standards.</p>
+                    <ul>
+                        <li>ISO 9001:2015</li>
+                        <li>ISO 27001:2013</li>
+                        <li>CMMI Level 3</li>
+                        <li>AWS Certified Solutions Architect</li>
+                        <li>Microsoft Certified: Azure Solutions Architect Expert</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/certifications.png" alt="Our certifications">
+            </section>
+
+            <!-- 11th content -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Our Awards</h2>
+                    <p>We have been recognized for our excellence and innovation in the technology industry.</p>
+                    <ul>
+                        <li>Best Tech Company of the Year</li>
+                        <li>Innovation Award</li>
+                        <li>Customer Satisfaction Award</li>
+                        <li>Best Workplace Award</li>
+                        <li>Technology Excellence Award</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/awards.png" alt="Our awards">
+            </section>
+
+            <!-- 12th content -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>Our Community Involvement</h2>
+                    <p>We are committed to giving back to the community and making a positive impact.</p>
+                    <ul>
+                        <li>Tech Education Programs</li>
+                        <li>Community Service Initiatives</li>
+                        <li>Charity Events</li>
+                        <li>Mentorship Programs</li>
+                        <li>Environmental Sustainability Projects</li>
+                    </ul>
+                </div>
+                <img src="resources/images/content/community_involvement.png" alt="Our community involvement">
+            </section>
+
+            <!-- Table 1 -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Our Service Packages</h2>
+                    <p>We offer various service packages to meet your specific needs.</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Features</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic</td>
+                                <td>Custom Software Development, Basic Support</td>
+                                <td>$500/month</td>
+                            </tr>
+                            <tr>
+                                <td>Standard</td>
+                                <td>Custom Software Development, 24/7 Support, Cloud Migration</td>
+                                <td>$1000/month</td>
+                            </tr>
+                            <tr>
+                                <td>Premium</td>
+                                <td>Custom Software Development, 24/7 Support, Cloud Migration, Cybersecurity Solutions</td>
+                                <td>$2000/month</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Table 2 -->
+            <section class="reverse">
+                <div class="text">
+                    <h2>Our Client Satisfaction Scores</h2>
+                    <p>We strive to achieve the highest levels of client satisfaction.</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Score</th>
+                                <th>Improvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Overall Satisfaction</td>
+                                <td>95%</td>
+                                <td>+5%</td>
+                            </tr>
+                            <tr>
+                                <td>Project Delivery</td>
+                                <td>92%</td>
+                                <td>+3%</td>
+                            </tr>
+                            <tr>
+                                <td>Support Services</td>
+                                <td>90%</td>
+                                <td>+4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Links to Popular Sites -->
+            <section class="unreverse">
+                <div class="text">
+                    <h2>Useful Resources</h2>
+                    <p>Here are some useful resources and links to popular sites:</p>
+                    <ul>
+                        <li><a href="https://www.github.com" target="_blank">GitHub</a> - A platform for version control and collaboration.</li>
+                        <li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a> - A community of developers helping each other.</li>
+                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - A professional networking site.</li>
+                        <li><a href="https://www.coursera.org" target="_blank">Coursera</a> - Online courses from top universities and companies.</li>
+                        <li><a href="https://www.aws.amazon.com" target="_blank">AWS</a> - Cloud computing services.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <!-- Footer and Site Map -->
+    <hr class="divider"/>
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Codejos. All rights reserved.</p>
+    </footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

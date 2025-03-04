@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="resources/images/logos/logo_darkbg.png">
+
+    <!-- Reset -->
+    <link href="styles/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link href="styles/unified.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
+
+    <title>About Me - Codejos</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-md fixed-top">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="resources/images/logos/logo_transparentbg.png" alt="Conejos Coding Corporation Logo">
+            </a>
+            <a class="navbar-brand" href="">Codejos</a>
+            
+            <!-- Toggler button for offcanvas (only visible on small screens) -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Offcanvas Navbar (Only for small screens) -->
+            <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Codejos</h5>
+                    <button type="button" class="btn-close" data-bs-theme="light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <hr class="divider"/>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="conejos_ex4.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about_us.html#team">Our Team</a></li>
+                                <li><a class="dropdown-item" href="about_us.html#company">The Company</a></li>
+                                <li><a class="dropdown-item" href="about_us.html#mission_vision">Mission and Vision</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html#offer">What We Offer</a></li>
+                                <li><a class="dropdown-item" href="services.html#cases">Use Cases</a></li>
+                                <li><a class="dropdown-item" href="services.html#pricing">Pricing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Portfolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="portfolio.html#gallery">Gallery</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html#works">Our Works</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html#testimonials">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Regular Navbar (Visible on medium screens and larger) -->
+            <div class="collapse navbar-collapse d-none d-md-flex">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="conejos_ex4.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about_us.html#team">Our Team</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#company">The Company</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#mission_vision">Mission and Vision</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#offer">What We Offer</a></li>
+                            <li><a class="dropdown-item" href="services.html#cases">Use Cases</a></li>
+                            <li><a class="dropdown-item" href="services.html#pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html#gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html#works">Our Works</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html#testimonials">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Us Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <h1 class="hero-header">About Me</h1>
+            <p class="hero-text">Get to know me!</p>
+        </div>
+        <div class="scroll-prompt">
+            <div class="scroll-text">SCROLL</div>
+            <span class="scroll-arrow">↓</span>
+        </div>
+    </section>
+    
+    <!-- Main Content Section -->
+    <section class="content-backdrop">
+        <div class="background"></div>
+        <main class="content backdrop">
+            
+            <!-- About Me -->
+            <section class="unreverse" id="team">
+                <div class="text">
+                    <h2>Rainier Martin T. Conejos</h2>
+                    <p>I'm a computer science student at Mapua University, Philippines. I strive to do my best in everything I pursue.</p>
+                </div>
+                <map name="team_map">
+                    <area shape="default" alt="Rainier Martin T. Conejos" href="info_rainier.html">
+                </map>
+                <img src="resources/images/content/team.jpg" alt="Our Team" usemap="#team_map">
+            </section>
+        </main>
+    </section>
+
+    <!-- Footer -->
+    <hr class="divider"/>
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Codejos. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
