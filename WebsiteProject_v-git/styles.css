@@ -314,6 +314,57 @@ button[type="submit"]:hover {
     margin-bottom: 8px;
 }
 
+/*About us*/
+.about-us {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us .highlight {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+.about-us .vision-mission {
+    margin-top: 30px;
+}
+
+.about-us .vision-mission h3 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+.about-us .team {
+    margin-top: 40px;
+}
+
+.about-us .team h3 {
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+.about-us .team p {
+    font-size: 16px;
+    color: #ddd;
+    
+}
 /* Testimonials */
 .testimonials p {
     font-style: italic;
