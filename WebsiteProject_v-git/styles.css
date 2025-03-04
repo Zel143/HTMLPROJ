@@ -81,6 +81,12 @@ nav ul li a:hover {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
+nav ul li a.active {
+    background-color: #b92b39;
+    padding: 20px 20px;
+}
+
+
 /* Container and Hero Section */
 .container {
     position: relative;
