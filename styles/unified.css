@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     color: #ffffff;
-    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 body {
@@ -17,7 +17,6 @@ header {
     background: #d12f3e;
 }
 .navbar-brand {
-    font-size: 2rem;
     color: #f5e6ca;
 }
 .navbar-brand img {
@@ -253,4 +252,32 @@ header {
 footer {
     min-height: 10vh;
     background-color: #851924;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.site-map .ul {
+    list-style: none;
+    padding: 0;
+    flex-direction: row;
+}
+
+.site-map .ul a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.developer-info {
+    margin-top: 10px;
 }
