@@ -3,18 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - INK FIST STUDIOS</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Inkfist Studio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        .about-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .about-button {
+            display: block;
+            width: 80%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .about-button:hover {
+            background-color: yellow;
+            color: black;
+        }
+        .about-description {
+            font-size: 16px;
+            color: white;
+            margin-top: 10px;
+            text-shadow: 2px 2px 3px black;
+        }
+        .about-section h2, .about-section p {
+            color: white;
+            text-shadow: 2px 2px 3px black;
+        }
+        body {
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Images/InkFIstBuddy.png" alt="Ink Fist Logo">
+            <img src="logo.png" alt="Inkfist Studio Logo" width="150">
         </div>
-        <h2>INK FIST STUDIOS</h2>
+        <h1>Welcome to Inkfist Studio</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -22,51 +60,35 @@
             </ul>
         </nav>
     </header>
+    
 
-    <div class="container">
-        <img src="Images/Tomato Art.png" alt="Tomato Art" style="width: 100%; height:auto;">
-        <div class="hometext"><p><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span> <span>U</span><span>S</span></p></div>
-        <div class="hometextunder"><span>"OUR STORY"</span></div>
-        <div class="hometextbutton"><button><span><a href="index.html">Home</a></span> <span class="arrow">>></span></button></div>
-    </div>
+    <section class="about-section">
+        <img src="team.jpg" alt="Inkfist Studio Team" usemap="#team-map" class="about-image">
+        <map name="team-map">
+            <!-- Updated coordinates -->
+            <area shape="rect" coords="72,349,581,950" href="team.html#Ranzel" alt="Ranzel Virtucio">
+            <area shape="rect" coords="601,140,936,502" href="team.html#Ace" alt="Angel Ace Dimalanta">
+            <area shape="rect" coords="1038,120,1338,457" href="team.html#Jessie" alt="Jessie Juanico">
+            <area shape="rect" coords="1440,175,1763,535" href="team.html#Kenshin" alt="Kenshin Alcazar">
+            <area shape="rect" coords="1055,581,1485,1042" href="team.html#Rain" alt="Rainier Conejos">
+        </map>
+        <a href="team.html" class="about-button">Meet Our Team</a>
+        <p class="about-description">Our artists and animators create stunning visuals that leave a lasting impact.</p>
+    </section>
 
-    <section class="about-content">
-        <h2>Our Mission</h2>
-        <p>
-            INK FIST STUDIOS was founded with a simple mission: to create the most dynamic, energetic, and visually 
-            striking animations in the industry. We believe that movement is at the heart of all great visual storytelling, 
-            and we push the boundaries of what's possible in animation every day.
-        </p>
-        
-        <h2>Our History</h2>
-        <p>
-            Founded in 2015 by a group of passionate animators who met while working on a major fighting game title, 
-            INK FIST STUDIOS began as a small collective dedicated to perfecting the art of animated combat. What started 
-            as a shared passion project quickly grew into a sought-after studio, known for our distinctive style and 
-            technical excellence.
-        </p>
-        
-        <h2>Our Approach</h2>
-        <p>
-            At INK FIST, we approach each project with a blend of technical precision and artistic flair. Our process begins 
-            with intensive research and reference gathering, followed by meticulous planning of key frames and motion arcs. 
-            We then bring our animations to life through a combination of traditional hand-drawn techniques and cutting-edge 
-            digital tools, always maintaining our signature high-energy style.
-        </p>
-        
-        <h2>Our Services</h2>
-        <ul>
-            <li>Character animation for games and films</li>
-            <li>Fight scene choreography and execution</li>
-            <li>Special effects animation</li>
-            <li>Storyboarding and concept art</li>
-            <li>Full production services for animated shorts</li>
-            <li>Consultation and training</li>
-        </ul>
+    <section class="about-section">
+        <a href="mission-vision.html" class="about-button">Mission & Vision</a>
+        <p class="about-description">We push creative boundaries, crafting inspiring stories with excellence.</p>
+    </section>
+
+    <section class="about-section">
+        <a href="what-makes-us-different.html" class="about-button">What Makes Us Different</a>
+        <p class="about-description">Our fusion of cutting-edge technology and artistic vision creates immersive experiences.</p>
     </section>
 
     <footer>
-        <p><i>Developed by: Angel Ace Dimalanta, Rainier Conejos, Ranzel Virtucio, Jesse Juanico, and Kenshin Alcazar</i></p>
+        <p>&copy; 2025 Inkfist Studio. All Rights Reserved.</p>
     </footer>
+    
 </body>
 </html>

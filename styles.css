@@ -81,6 +81,12 @@ nav ul li a:hover {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
+nav ul li a.active {
+    background-color: #b92b39;
+    padding: 20px 20px;
+}
+
+
 /* Container and Hero Section */
 .container {
     position: relative;
@@ -236,65 +242,65 @@ section p {
 }
 
 /* Contact Form */
+.contact {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff4c4c;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.contact-info a {
+    color: #ff4c4c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    display: grid;
+    gap: 15px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #f5e6ca;
+    font-weight: 600;
 }
 
-.form-group input, .form-group textarea {
+.form-group input, 
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    background-color: rgb(209, 47, 62);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: rgb(223, 77, 91);
-}
-
-button[type="submit"] {
-    background-color: #d12f3e;
-    color: #f5e6ca;
-    border: none;
-    padding: 12px 25px;
-    font-family: fantasy, Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: #aa262f;
-}
 
 /* About Section Styles */
 .about-content ul {
@@ -308,6 +314,57 @@ button[type="submit"]:hover {
     margin-bottom: 8px;
 }
 
+/*About us*/
+.about-us {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us .highlight {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+.about-us .vision-mission {
+    margin-top: 30px;
+}
+
+.about-us .vision-mission h3 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+.about-us .team {
+    margin-top: 40px;
+}
+
+.about-us .team h3 {
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+.about-us .team p {
+    font-size: 16px;
+    color: #ddd;
+    
+}
 /* Testimonials */
 .testimonials p {
     font-style: italic;
