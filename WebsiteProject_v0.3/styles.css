@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: fantasy;    
+    color:#f5e6ca;
+}
+
+.logo img:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+.container{
+    position: relative;
+}
+
+.container img{
+    position: relative;
+    filter: brightness(50%);
+  
+}
+
+.container img:hover{
+    filter: brightness(75%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.hometext, .hometextunder{
+    text-shadow: 2px 5px 4px black;
+}
+
+.hometext{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    filter: brightness(100%);
+    color: #f5e6ca; 
+    float: left; 
+    font-size: 100px;
+}
+
+.hometext span:hover{
+    color: #f28f7e;
+    transition: 0.25s ;
+}
+
+.hometextunder{
+    position: absolute;
+    top: 410px;
+    left: 100px;
+    font-size: 30px;
+    color: #f5e6ca;
+}
+
+.hometextunder:hover{
+    color: #cc3030;
+    transition: 0.25s ;
+}
+
+.hometextbutton{
+    position: absolute;
+    top: 450px;
+    left: 110px;
+}
+
+.hometextbutton button{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    text-decoration: none;
+    background-color: #f5e6ca;
+    transition: 0.5s;
+}
+
+.hometextbutton a{
+    text-decoration: none;
+    color: #851924;
+    align-items: center;
+}
+
+.hometextbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.hometextbutton span:hover{
+    padding-right: 10px;
+    transition: 0.5s;
+    text-transform:uppercase;
+}
+
+.hometextbutton button:hover{
+    background-color: #f28f7e;
+    padding-right: 10px;
+    transition: 0.5s;
+    text-transform:uppercase;
+}
+
+.hometext2, .hometext2under{
+    text-shadow: 2px 5px 4px black;
+}
+
+.hometext2{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    filter: brightness(100%);
+    color: #f5e6ca; 
+    float: left; 
+    font-size: 45px;
+}
+
+.hometext2 span:hover{
+    color: #f28f7e;
+    transition: 0.25s ;
+}
+
+.hometext2under{
+    position: absolute;
+    top: 360px;
+    left: 100px;
+    font-size: 30px;
+    color: #f5e6ca;
+}
+
+.hometext2under:hover{
+    color: #cc3030;
+    transition: 0.25s ;
+}
+
+.hometext2button{
+    position: absolute;
+    top: 450px;
+    left: 110px;
+}
+
+.hometext2button button{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    text-decoration: none;
+    background-color: #f5e6ca;
+    transition: 0.5s;
+}
+
+.hometext2button a{
+    text-decoration: none;
+    color: #851924;
+    align-items: center;
+}
+
+.hometext2button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.hometext2button span:hover{
+    padding-right: 10px;
+    transition: 0.5s;
+    text-transform:uppercase;
+}
+
+.hometext2button button:hover{
+    background-color: #f28f7e;
+    padding-right: 10px;
+    transition: 0.5s;
+    text-transform:uppercase;
+}
+
+
+.arrow{
+    color: #851924;
+}
+
+body{
+    background-color: black;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.section1:hover{
+    background-color: #161318;
+    transition: 0.25s;
+}
+
+.text-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.text-image img:hover{
+    transform: scale(105%);
+    transition: 0.25s;
+}
+
+.section1 .image{
+    display: flex;
+    margin: 20px;
+    float: left;
+}
+
+.section1 .text{
+    margin: 10px;
+}
+
+header{
+    background-color: #d12f3e;
+    color: #f5e6ca;
+    padding: 15px;
+    padding-bottom: 35px;
+}
+
+footer{
+    color: #ffc965;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: arial;
+    background-color: #d12f3e;
+    text-align: center;
+    
+}
+
+.sitemap{
+    color: #fffdf0;
+}
+
+.socials{
+    color: #fffdf0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fffdf0;
+}
